@@ -15,6 +15,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+        ship.update(dt)
         pygame.Surface.fill(screen, ("black"))
         ship.draw(screen)
         pygame.display.flip()
